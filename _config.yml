@@ -3,7 +3,7 @@ title: ddddxxx's Blog
 SEOTitle: ddddxxx的博客 | ddddxxx's Blog
 header-img: img/home-bg.jpg
 email: dengxiang2008@gmail.com
-description: ""
+description: "So, what are you looking for?"
 keyword: ""
 url: "https://ddddxxx.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -26,7 +26,7 @@ github_username:    ddddxxx
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
