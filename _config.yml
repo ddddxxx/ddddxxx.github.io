@@ -3,7 +3,7 @@ title: ddddxxx's Blog
 SEOTitle: ddddxxx的博客 | ddddxxx's Blog
 header-img: img/home-bg.jpg
 email: dengxiang2008@gmail.com
-description: "So, what are you looking for?"
+description: ""
 keyword: ""
 url: "https://ddddxxx.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -67,8 +67,8 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: ""
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "So, what are you looking for?"
+sidebar-avatar: /img/avatar-ddddxxx.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
