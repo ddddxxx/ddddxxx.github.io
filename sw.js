@@ -19,20 +19,18 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/hux-blog.min.js",
   "./js/snackbar.js",
-  "./img/icon_wechat.png",
-  "./img/avatar-hux.jpg",
-  "./img/home-bg.jpg",
-  "./img/404-bg.jpg",
+  "./img/avatar-ddddxxx.jpg",
+  "./img/header-img/hyla.jpg",
+  "./img/header-img/cosmic-teapot.jpg",
   "./css/hux-blog.min.css",
   "./css/syntax.css",
-  "./css/bootstrap.min.css", 
+  "./css/bootstrap.min.css",
   "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
   "//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "huangxuan.me",
   "yanshuo.io",
   "cdnjs.cloudflare.com"
 ]
