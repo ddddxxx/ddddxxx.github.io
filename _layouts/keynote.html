@@ -97,6 +97,25 @@ layout: default
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
+                % if site.gitment_client_id %}
+                <!-- gitment 评论框 start -->
+                <div id="container"></div>
+                <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+                <script>
+                var gitment = new Gitment({
+                  owner: "{{site.gitment_github_username}}",
+                  repo: "{{site.gitment_github_repo}}",
+                  oauth: {
+                    client_id: "{{site.gitment_client_id}}",
+                    client_secret: "{{site.gitment_oauth_client_secret}}",
+                  },
+                })
+                gitment.render('container')
+                </script>
+                <!-- gitment 评论框 end -->
+                {% endif %}
+
             </div>
 
             <!-- Sidebar Container -->
