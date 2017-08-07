@@ -55,7 +55,7 @@ netease_comment: false
 
 # gitment settings
 gitment_github_username: ddddxxx
-gitment_github_repo: ddddxxx.github.io
+gitment_github_repo: blog
 gitment_client_id: c47118c8b06c581df2f4
 gitment_oauth_client_secret: 058c6d31622def8471cc7c6346df83a315a3caa2
 
