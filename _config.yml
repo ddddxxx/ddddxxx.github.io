@@ -92,11 +92,8 @@ service-worker: true
 
 # Friends
 friends: [
-    # {
-    #     title: "",
-    #     href: ""
-    # },{
-    #     title: "",
-    #     href: ""
-    # }
+    {
+        title: "Lemange",
+        href: "http://lemangeyin.com"
+    }
 ]
