@@ -17,17 +17,17 @@ tags:
 
 如果你制作过跨  平台的 framework，你一定遇到过这种情况：
 
-<img src="/img/in-post/post-cross-platform-frameworks/Alamofire-targets.png" width="228px"/>
+![Alamofire-targets @2x](/img/in-post/post-cross-platform-frameworks/Alamofire-targets.png)
 
 Alamofire 支持 iOS/macOS/tvOS/watchOS，加上测试，总共有 7 个 target。
 
 再看 SnapKit 的：
 
-<img src="/img/in-post/post-cross-platform-frameworks/SnapKit-targets.png" width="178px">
+![SnapKit-targets @2x](/img/in-post/post-cross-platform-frameworks/SnapKit-targets.png)
 
 同样是支持多平台，然而只有两个 Target。它要怎么编译到不同的平台呢？于是我们来看看它的 scheme：
 
-<img src="/img/in-post/post-cross-platform-frameworks/SnapKit-scheme.png" width="450px">
+![SnapKit-scheme @2x](/img/in-post/post-cross-platform-frameworks/SnapKit-scheme.png)
 
 只需要一个 scheme！其中包含了所有的目标平台。每一个都能运行单元测试并通过。
 
@@ -41,25 +41,25 @@ Alamofire 支持 iOS/macOS/tvOS/watchOS，加上测试，总共有 7 个 target�
 
 单 target 的核心在于，Xcode 使用 `Supported Platforms`[^SupportedPlatforms] 来标记一个 target 支持的设备，你可以手动添加需要支持的平台。我创建一个新项目作为例子：
 
-<img src="/img/in-post/post-cross-platform-frameworks/new-project.png" width="769px"/>
+![new-project @2x](/img/in-post/post-cross-platform-frameworks/new-project.png)
 
 这是 `Supported Platforms` 的默认设置：
 
-<img src="/img/in-post/post-cross-platform-frameworks/supported-platforms-original.png" width="701px"/>
+![supported-platforms-original @2x](/img/in-post/post-cross-platform-frameworks/supported-platforms-original.png)
 
 添加我们需要支持的平台：
 
-<img src="/img/in-post/post-cross-platform-frameworks/supported-platforms-modified.png" width="665px"/>
+![supported-platforms-modified @2x](/img/in-post/post-cross-platform-frameworks/supported-platforms-modified.png)
 
 此时在右上角 scheme 中选择平台，发现已经可以选择 `My Mac` 作为目标，但是 看不到 tvOS 和 watchOS 的模拟器。这是因为除了支持的平台以外，我们还要标记支持的设备。这个选项叫做 `Target Device Family`[^TargetDeviceFamily]，可选的值有 1，2，3，4。
 
 不幸的是，Xcode并不允许我们选择全部的组合：
 
-<img src="/img/in-post/post-cross-platform-frameworks/target-device-family-select.png" width="673px"/>
+![target-device-family-select @2x](/img/in-post/post-cross-platform-frameworks/target-device-family-select.png)
 
 你需要手动修改工程文件。文件的位置在 `PATH/TO/YOUR/PROJECT/YourProjectName.xcodeproj/project.pbxproj`。搜索 `TARGETED_DEVICE_FAMILY`，将对应行的值改为 `1,2,3,4`。
 
-<img src="/img/in-post/post-cross-platform-frameworks/target-device-family-modified.png" width="432px"/>
+![target-device-family-modified @2x](/img/in-post/post-cross-platform-frameworks/target-device-family-modified.png)
 
 > 如果文件中没有对应字段，请在 Xcode 中修改 `Target Device Family` 的值，并确认该行变为加粗字体。（细字体意味着 pbxproj 中没有对应字段，自动取默认值）
 
@@ -69,11 +69,11 @@ iOS 和 macOS 的程序包中，动态链接库的位置是相同的，都在 `(
 
 这个选项叫做 `Runpath Search Path`，我们需要额外设置针对 macOS 的选项。
 
-<img src="/img/in-post/post-cross-platform-frameworks/runpath-search-path.png" width="697px"/>
+![runpath-search-path @2x](/img/in-post/post-cross-platform-frameworks/runpath-search-path.png)
 
 展开该项目，点击 `+` 符号以添加一个针对 macOS 的设置。
 
-<img src="/img/in-post/post-cross-platform-frameworks/runpath-search-path-modified.png" width="682px"/>
+![runpath-search-path-modified @2x](/img/in-post/post-cross-platform-frameworks/runpath-search-path-modified.png)
 
 将 macOS 的值改为 `@loader_path/../Frameworks` 和 `@executable_path/../Frameworks`。并在 `Release` 中进行相同的设置。
 

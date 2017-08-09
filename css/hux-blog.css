@@ -1260,3 +1260,11 @@ img::-moz-selection {
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
+
+.post-container img[alt~="@2x"] {
+    zoom: 50%;
+}
+
+.post-container img[alt~="@3x"] {
+    zoom: 33%;
+}
