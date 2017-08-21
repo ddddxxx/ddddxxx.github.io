@@ -6,9 +6,7 @@ author: ddddxxx
 tags:
     - Swift
     - Xcode
-    - iOS
-    - macOS
-    - framework
+    - Apple
 ---
 
 > 注意：这篇文章旨在解决多平台项目中 target 过多的问题，而不会教你制作 Framework 的基础知识。
