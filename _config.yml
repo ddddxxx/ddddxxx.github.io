@@ -93,6 +93,10 @@ service-worker: true
 # Friends
 friends: [
     {
+        title: "FoggyIce的博客",
+        href: "https://foggyice.github.io"
+    },
+    {
         title: "Lemange",
         href: "http://lemangeyin.com"
     }
