@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译] Swift 4 中的弱引用
+title: 【译】Swift 4 中的弱引用
 subtitle: Swift 4 Weak References
 author: ddddxxx
 tags:
