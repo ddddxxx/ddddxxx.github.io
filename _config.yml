@@ -99,5 +99,9 @@ friends: [
     {
         title: "Lemange",
         href: "http://lemangeyin.com"
+    },
+    {
+        title: "且听书吟",
+        href: "https://yufan.me"
     }
 ]
