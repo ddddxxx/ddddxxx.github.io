@@ -3,6 +3,7 @@ layout: post
 title: 如何优雅地在 Jekyll 博客中插入高清图片
 subtitle:
 author: ddddxxx
+date: 2017-08-21
 tags:
     - Jekyll
     - CSS

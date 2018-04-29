@@ -3,6 +3,7 @@ layout: post
 title: 制作跨  平台的动态链接库
 subtitle:
 author: ddddxxx
+date: 2017-08-05
 tags:
     - Swift
     - Xcode
