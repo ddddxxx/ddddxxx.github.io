@@ -3,7 +3,6 @@ layout: post
 title: Swift 中基于闭包的 KVO 的隐患
 subtitle:
 author: ddddxxx
-date: 2017-04-29
 tags:
     - Swift
 ---
