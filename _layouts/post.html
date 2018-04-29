@@ -103,7 +103,7 @@ layout: default
                     client_id: "{{site.gitment_client_id}}",
                     client_secret: "{{site.gitment_oauth_client_secret}}",
                   },
-                  id: '<%= page.date %>',
+                  id: "{{page.date}}",
                 })
                 gitment.render('container')
                 </script>
