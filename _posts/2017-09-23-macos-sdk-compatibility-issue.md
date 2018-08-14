@@ -7,6 +7,7 @@ date: 2017-09-23
 tags:
     - Swift
     - Cocoa
+    - Runtime
 ---
 
 最近升级了 Xcode 9 GM，并把几个主要项目迁移到了 Swift 4。过程中发现了一个小坑，记下来以供参考。
